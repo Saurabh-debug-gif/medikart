@@ -1,0 +1,93 @@
+.medicine-display {
+  padding: 50px 30px;
+  background: linear-gradient(135deg, #f9fcff, #eaf4ff);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInPage 0.7s ease;
+}
+
+/* Subtle page fade in */
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Category filter grid */
+.category-filter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px;
+  margin-bottom: 50px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Category filter buttons as modern cards */
+.category-filter button {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  color: #0077b6;
+  padding: 22px 18px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 119, 182, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Icon inside category buttons */
+.category-filter button .icon {
+  font-size: 2.6em;
+  margin-bottom: 12px;
+  transition: transform 0.35s ease;
+}
+
+/* Hover magic */
+.category-filter button:hover {
+  background: linear-gradient(145deg, #0097d8, #0077b6);
+  color: #fff;
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 10px 20px rgba(0, 119, 182, 0.28);
+}
+
+.category-filter button:hover .icon {
+  transform: scale(1.15) rotate(6deg);
+}
+
+/* Click effect */
+.category-filter button:active {
+  transform: scale(0.95);
+}
+
+/* Subtle ripple effect on hover */
+.category-filter button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.category-filter button:hover::after {
+  width: 280%;
+  height: 280%;
+  opacity: 0;
+}

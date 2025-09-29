@@ -1,0 +1,10 @@
+[
+  { "name": "FIXXI O PLUS", "price": 120, "category": "Antibiotics", "description": "High quality medicine.", "image": null },
+  { "name": "FIXXI-O", "price": 95, "category": "Antibiotics", "description": "High quality medicine.", "image": null },
+  { "name": "FIXXI DRY SYRUP", "price": 80, "category": "Antibiotics", "description": "High quality medicine.", "image": null },
+  { "name": "RBDON DRY", "price": 110, "category": "Antivirals", "description": "High quality medicine.", "image": null },
+  { "name": "CEPDON-O 200", "price": 130, "category": "Antibiotics", "description": "High quality medicine.", "image": null },
+  { "name": "CEPDON-CV-325", "price": 140, "category": "Antibiotics", "description": "High quality medicine.", "image": null },
+  { "name": "AMOLOX CV Dry SYRUP", "price": 100, "category": "Antibiotics", "description": "High quality medicine.", "image": null },
+  { "name": "AMOLOX-500 CAP", "price": 85, "category": "Antibiotics", "description": "High quality medicine.", "image": null }
+]
